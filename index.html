@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HacktoberFest'21 - GDSC, IIIT Sricity</title>
+    <link href="https://unpkg.com/@webpixels/css@1.0/dist/index.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+        * {
+            color: black
+        }
+
+        .rbs {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        code {
+            padding: 10px;
+            color: chartreuse;
+        }
+
+        main {
+            background-color: #f4f0e1;
+        }
+
+        a {
+            color: blue;
+        }
+
+        .image-container {
+            width: 50%;
+            height: 400px;
+
+        }
+
+        .image {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="py-3" style="background-color : #f74700;">
+            <h1 class="text-center text-white">HacktoberFest'21 - GDSC, IIIT Sricity</h1>
+        </div>
+        <div class="container">
+
+            <div class="my-3">
+                <!-- <img src="./banner08BLlogo.png" alt=""> -->
+            </div>
+
+            <div class="my-3">
+                <h2 class="rbs">Contents</h2>
+                <ul>
+                    <li><a href="#1">Creating an account on github.com</a></li>
+                    <li><a href="#2">Installing git</a></li>
+                    <li><a href="#3">Configuring git in your local system</a></li>
+                    <li><a href="#4">Making your first Pull Request</a></li>
+                </ul>
+            </div>
+
+            <div id="1" class="my-5">
+                <h2 class="rbs">Creating an account on github.com</h2>
+                <ul class="my-3">
+                    <li>
+                        <p>All you have to do is head on to <a target="_blank" href="https://github.com">github.com</a>
+                            and sign up to create an
+                            account.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="2" class="my-5">
+
+                <h2 class="rbs">Installing Git</h2>
+
+                <div class="my-4">
+                    <h4>Install git on windows</h4>
+
+                    <div class="p-2">
+                        <p>Download windows installer for git from <a target="_blank"
+                                href="https://git-scm.com/downloads">here</a>.</p>
+
+                        <p>Now open the command prompt or git bash (preferable) and run the following to check whether
+                            git
+                            is
+                            installed or not</p>
+                    </div>
+
+                    <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                        <code>git --version</code>
+                    </div>
+                </div>
+
+                <div class="my-4">
+                    <h4>Install git on linux</h4>
+                    <div class="p-2">
+                        <p>To install git on a linux machine from your shell run the following commands</p>
+
+                        <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                            <code>sudo apt-get update</code>
+                        </div>
+
+                        <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                            <code>sudo apt-get install git</code>
+                        </div>
+
+                        <p>and run the following to check whether git is installed or not</p>
+
+                        <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                            <code>git --version</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4">
+                    <h4>Install git on Mac</h4>
+
+                    <div class="p-2">
+                        <p>Download the latest Git for Mac installer from <a target="_blank"
+                                href="https://git-scm/downloads">here</a>.</p>
+
+                        <p>Follow the prompts to install Git.</p>
+
+                        <p>Open a terminal and verify the installation was successful by typing:</p>
+
+                        <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                            <code>git --version</code>
+                        </div>
+
+                        <p>If you have installed Homebrew to manage packages on OS X, you can follow these instructions
+                            to
+                            install Git:
+
+                            Open your terminal and install Git using Homebrew:</p>
+
+
+                        <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                            <code>brew install git</code>
+                        </div>
+
+                        <p>Verify the installation was successful by typing</p>
+
+                        <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                            <code>git --version</code>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="3" class="my-5">
+                <h3 class="rbs">Configuring git in your local system</h3>
+
+                <div class="p-2">
+                    <p><strong>Same for all users</strong></p>
+
+                    <p>Windows users are suggested to use git bash for typing commands</p>
+
+                    <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                        <code>git config --global user.name "your-username(same username from github)"</code>
+                    </div>
+
+                    <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                        <code>git config --global user.email "your-email(same email from github)"</code>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="4" class="my-5">
+                <h3 class="rbs">Making your first pull request</h3>
+                <div class="my-3 p-2">
+                    <h4 class="rbs">Pre-requisites</h4>
+                    <ul>
+                        <li>You should have Git installed on your local machine.</li>
+                        <li>You’ll also need to have or create a GitHub account.</li>
+                    </ul>
+                </div>
+                <div class="my-3">
+                    <h3 class="rbs">Steps</h3>
+                    <div class="p-2">
+                        <h5 class="rbs">Step -1 : Fork a repository</h5>
+                        <div class="p-2">
+                            <p>Choose a repository you want to contribute to and fork it </p>
+                            <p>When you’re on the main page for the repository, you’ll see a Fork button on your upper
+                                right-hand side of the page, underneath your user icon:</p>
+                            <div class="d-flex justify-content-center align-items-center my-5">
+                                <div class="image-container">
+                                    <img class="image" src="./images/ch_gh_arrow_blink.gif" alt="">
+                                </div>
+                            </div>
+                            <p class="my-3">Click on the fork button to start the forking process. Within your browser
+                                window, you’ll receive a notification that the repository you’re forking is being
+                                processed:</p>
+                            <div class="d-flex justify-content-center align-items-center my-5">
+                                <div class="image-container">
+                                    <img src="./images/GitHub_Forking.png" alt="" class="image">
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="rbs">Step - 2 : Clone the repository</h5>
+                        <div class="p-2">
+                            <div class="d-flex justify-content-center align-items-center my-5">
+                                <div class="image-container">
+                                    <img src="./images/git_clone.png" alt="" class="image">
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <p>Copy the url from the code button in the repo.</p>
+                                </li>
+                                <li>
+                                    <p>Open your git bash in windows or terminal in mac or linux and type the following
+                                        command.</p>
+                                </li>
+                            </ul>
+
+                            <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                                <code>git clone "The url your copied"</code>
+                            </div>
+
+
+                            <div class="d-flex justify-content-center align-items-center my-5">
+                                <div class="image-container">
+                                    <img src="./images/clone_cmd.png" alt="" class="image">
+                                </div>
+                            </div>
+
+                            After running the command you should see something like this
+
+                            <div class="d-flex justify-content-center align-items-center my-5">
+                                <div class="image-container">
+                                    <img src="./images/clone_complete.png" alt="" class="image">
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li>Now cd into the cloned directory or repo and open it with your favorite editor</li>
+                            </ul>
+
+                            <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                                <code>cd repositoryName</code>
+                            </div>
+
+                            <ul>
+                                <li>Now make a new branch by typing the following command</li>
+                            </ul>
+
+                            <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                                <code>git checkout -b feature-branch</code>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center my-5">
+                                <div class="image-container">
+                                    <img src="./images/checkout_branch.png" alt="" class="image">
+                                </div>
+                            </div>
+
+                            Once you enter the git checkout command, you will receive the following output:
+
+                            <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                                <code>Output: <br>
+                                    Switched to branch 'feature-branch'</code>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            
+                            <h5 class="rbs">Step-3: Make your changes locally</h5>
+
+                            <div class="p-2">
+
+                                <p>You can make your changes from your code editor like nano, vim, vscode etc.</p>
+
+                                <p>If your changes are simply appending a line to the file then you can use bash commands like echo</p>
+
+                                <div class="d-flex justify-content-center align-items-center my-5">
+                                    <div class="image-container">
+                                        <img src="./images/write_to_file.png" alt="" class="image">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <h5 class="rbs">Step-4: Commit your changes</h5>
+                            <div class="p-2">
+                               
+                                <p>Once you have modified an existing file or added a new file to the project, you can add it to your local repository, which we can do with the git add command. This command uses the following</p>
+
+                                <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                                    <code>git add .</code>
+                                </div>
+    
+                                <p>This command adds all your modified files to staging area.</p>
+
+                                <div class="card text-success bg-dark p-0 my-2 rounded-1">
+                                    <code>git commit -m "Commit Message"</code>
+                                </div>
+
+                                <p>This command commits all your changes made so far in simple words it creates a checkpoint in your history. </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="rbs">Step-5: Push your changes</h5>
+                            <div class="d-flex justify-content-center align-items-center my-5">
+                                <div class="image-container">
+                                    <img src="./images/push.png" alt="" class="image">
+                                </div>
+                            </div>
+
+                            <p>
+                                You can now navigate to the forked repository on your GitHub webpage and toggle to the branch you pushed to see the changes you have made in-browser.
+                            </p>
+
+                            <div class="d-flex justify-content-center align-items-center my-5">
+                                <div class="image-container">
+                                    <img src="./images/pr_home.png" alt="" class="image">
+                                </div>
+                            </div>
+
+
+                            <div class="d-flex justify-content-center align-items-center my-5">
+                                <div class="image-container">
+                                    <img src="./images/create_PR.png" alt="" class="image">
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center my-5">
+                                <div class="image-container">
+                                    <img src="./images/pr_succes.png" alt="" class="image">
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
